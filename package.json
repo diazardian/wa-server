@@ -1,0 +1,23 @@
+{
+  "name": "wa-server",
+  "version": "1.0.0",
+  "description": "server wa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prod": "pm2 start index.js --name wa-server",
+    "monit": "pm2 monit",
+    "kill": "pm2 delete wa-server",
+    "update": "pm2 update",
+    "restart": "pm2 restart wa-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
+  }
+}
